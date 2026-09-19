@@ -7,14 +7,14 @@ const mangayomiSources = [{
   "iconUrl": "https://www.google.com/s2/favicons?sz=256&domain=https://reanime.to/",
   "typeSource": "single",
   "itemType": 1,
-  "version": "0.1.7",
+  "version": "0.1.8",
   "pkgPath": "anime/src/en/reanime.js",
   "isManga": false,
   "isNsfw": false,
   "hasCloudflare": false,
   "isFullData": true,
   "appMinVerReq": "0.5.0",
-  "sourceCodeUrl": "https://raw.githubusercontent.com/SaltWaterWaterMelon/ReAnimeRepo/main/javascript/anime/src/en/reanime.js?v=0.1.7",
+  "sourceCodeUrl": "https://raw.githubusercontent.com/SaltWaterWaterMelon/ReAnimeRepo/main/javascript/anime/src/en/reanime.js?v=0.1.8",
   "dateFormat": "",
   "dateFormatLocale": "",
   "additionalParams": "",
@@ -338,4 +338,7 @@ class DefaultExtension extends MProvider {
   }
 }
 
-
+// Compatibility aliases for older AnymeX/Mangayomi test harnesses.
+// Current Mangayomi creates "extention" itself; some harnesses expect "extension".
+var extension = new DefaultExtension();
+var extention = extension;
