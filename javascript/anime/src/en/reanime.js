@@ -7,7 +7,7 @@ const mangayomiSources = [{
   "iconUrl": "https://www.google.com/s2/favicons?sz=256&domain=https://reanime.to/",
   "typeSource": "single",
   "itemType": 1,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "pkgPath": "anime/src/en/reanime.js",
   "isManga": false,
   "isNsfw": false,
@@ -339,8 +339,3 @@ class DefaultExtension extends MProvider {
 }
 
 
-// AnymeX evaluates source code in an isolated scope. Publish the instance on
-// the global object as well as keeping a local binding so the host can resolve
-// `extension` after eval.
-var extension = new DefaultExtension();
-if (typeof globalThis !== "undefined") globalThis.extension = extension;
