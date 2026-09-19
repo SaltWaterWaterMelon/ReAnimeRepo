@@ -7,14 +7,14 @@ const mangayomiSources = [{
   "iconUrl": "https://www.google.com/s2/favicons?sz=256&domain=https://reanime.to/",
   "typeSource": "single",
   "itemType": 1,
-  "version": "0.1.6",
+  "version": "0.1.7",
   "pkgPath": "anime/src/en/reanime.js",
   "isManga": false,
   "isNsfw": false,
   "hasCloudflare": false,
   "isFullData": true,
   "appMinVerReq": "0.5.0",
-  "sourceCodeUrl": "https://raw.githubusercontent.com/SaltWaterWaterMelon/ReAnimeRepo/main/javascript/anime/src/en/reanime.js?v=0.1.6",
+  "sourceCodeUrl": "https://raw.githubusercontent.com/SaltWaterWaterMelon/ReAnimeRepo/main/javascript/anime/src/en/reanime.js?v=0.1.7",
   "dateFormat": "",
   "dateFormatLocale": "",
   "additionalParams": "",
@@ -339,17 +339,3 @@ class DefaultExtension extends MProvider {
 }
 
 
-
-// Compatibility entrypoints for AnymeX/Mangayomi runtime variants.
-// Some runtimes evaluate the source in a separate lexical scope and then
-// access the extension from a later eval. Publish both expected names on the
-// global object as well as local variables.
-var _reAnimeExtension = new DefaultExtension();
-
-if (typeof globalThis !== "undefined") {
-  globalThis.extension = _reAnimeExtension;
-  globalThis.extention = _reAnimeExtension;
-}
-
-var extension = _reAnimeExtension;
-var extention = _reAnimeExtension;
