@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Re:ANIME",
+    "id": 194820731,
+    "baseUrl": "https://reanime.to",
+    "lang": "en",
+    "typeSource": "multi",
+    "iconUrl": "https://www.google.com/s2/favicons?sz=256&domain=https://reanime.to/",
+    "dateFormat": "",
+    "dateFormatLocale": "",
+    "isNsfw": false,
+    "hasCloudflare": false,
+    "sourceCodeUrl": "https://raw.githubusercontent.com/SaltWaterWaterMelon/ReAnimeRepo/main/javascript/anime/src/en/reanime.js",
+    "apiUrl": "",
+    "version": "0.1.0",
+    "isManga": false,
+    "itemType": 1,
+    "isFullData": true,
+    "appMinVerReq": "0.5.0",
+    "additionalParams": "",
+    "sourceCodeLanguage": 1,
+    "notes": "Re:ANIME source. Playback exposes the site's FlixCloud embed links without decrypting protected streams."
+  }
+]
