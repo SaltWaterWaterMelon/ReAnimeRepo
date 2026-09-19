@@ -242,16 +242,16 @@ class DefaultExtension extends MProvider {
       const anchors = doc.select("a");
       for (const a of anchors) {
         const href = a.attr("href") || "";
-        const match = href.match(/\\/watch\\/([^?]+)\\?ep=([0-9.]+)/i);
+        const match = href.match(/\/watch\/([^?]+)\?ep=([0-9.]+)/i);
         if (!match || match[1] !== slug) continue;
 
-        const number = match[1];
+        const number = match[2];
         const key = number;
         if (seen[key]) continue;
 
         let label = (a.text || a.attr("title") || "").trim();
         if (!label) label = "Episode " + number;
-        if (!/^episode\\s/i.test(label) && !/^e\\d/i.test(label)) label = "Episode " + number + ": " + label;
+        if (!/^episode\s/i.test(label) && !/^e\d/i.test(label)) label = "Episode " + number + ": " + label;
 
         seen[key] = true;
         result.push({
