@@ -4,7 +4,7 @@
     "id": 194820731,
     "baseUrl": "https://reanime.to",
     "lang": "en",
-    "typeSource": "multi",
+    "typeSource": "single",
     "iconUrl": "https://www.google.com/s2/favicons?sz=256&domain=https://reanime.to/",
     "dateFormat": "",
     "dateFormatLocale": "",
@@ -12,13 +12,13 @@
     "hasCloudflare": false,
     "sourceCodeUrl": "https://raw.githubusercontent.com/SaltWaterWaterMelon/ReAnimeRepo/main/javascript/anime/src/en/reanime.js",
     "apiUrl": "",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "isManga": false,
     "itemType": 1,
     "isFullData": true,
     "appMinVerReq": "0.5.0",
     "additionalParams": "",
     "sourceCodeLanguage": 1,
-    "notes": "Re:ANIME source. Uses the current public HTML routes; no direct /api/* dependency or protected-stream decryption."
+    "notes": "Re:ANIME source. Uses the current public HTML routes."
   }
 ]
