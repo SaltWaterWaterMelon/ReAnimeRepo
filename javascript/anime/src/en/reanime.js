@@ -339,3 +339,7 @@ class DefaultExtension extends MProvider {
 }
 
 
+
+// Compatibility entrypoints for AnymeX/Mangayomi runtime variants.
+var extension = new DefaultExtension();
+var extention = extension;
