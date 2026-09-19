@@ -242,8 +242,8 @@ class DefaultExtension extends MProvider {
       const anchors = doc.select("a");
       for (const a of anchors) {
         const href = a.attr("href") || "";
-        const match = href.match(new RegExp("/watch/" + slug.replace(/[.*+?^{}()|[\\]\\\\]/g, "\\\\$&") + "\\?ep=([0-9.]+)", "i"));
-        if (!match) continue;
+        const match = href.match(/\\/watch\\/([^?]+)\\?ep=([0-9.]+)/i);
+        if (!match || match[1] !== slug) continue;
 
         const number = match[1];
         const key = number;
