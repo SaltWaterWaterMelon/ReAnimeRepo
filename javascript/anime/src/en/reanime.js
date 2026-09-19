@@ -337,3 +337,6 @@ class DefaultExtension extends MProvider {
     return [];
   }
 }
+
+
+const extension = new DefaultExtension();
